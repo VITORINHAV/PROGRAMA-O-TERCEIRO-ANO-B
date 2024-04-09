@@ -5,7 +5,7 @@
     --branco: #FFFFFF;
     --botao-ativo: #3a375e;
     --botao-inativo: rgba(58, 55, 94, 0,5);
---texto-fundo: rgba(58, 55, 94, 0.3);
+    --texto-fundo: rgba(58, 55, 94, 0.3);
 }
 body {
     background: var(--cor-de-fundo);
@@ -24,10 +24,10 @@ body {
 .titulo-principal { text-align: left;
     width: 100%;
     font-size: 32px;
-}
+    }
 .titulo-principal span {
     color: var(--verde);
-}
+    }
 .botao { font-family: «Crakra Petch», sans-serif;
     background-color: var(--botao-inativo);
     color: var(--branco); display: flex;
@@ -40,47 +40,45 @@ body {
     border-left: 2px solid var(--botao-ativo);
     border-right: 2px solid var(--botao-ativo);
     border-top: none;
-}
-.botoes { display: block;
-}
-@media screen and (min-width: 768px) { .botoes { display: flex;
-}
-}
-.botao:first-child { border-radius: 40px 0 0 0;
-}
-.botao:last-child { border-radius: 0 40px 0 0;
-}
+    }
+    .botoes { display: block;
+    }
+    @media screen and (min-width: 768px) { .botoes { display: flex;
+    }
+    }
+    .botao:first-child { border-radius: 40px 0 0 0;
+}.botao:last-child { border-radius: 0 40px 0 0;
+    }
 .botao.ativo{
     background-color: var(--botao-ativo);
     border-bottom: 4px solid var(--verde);
-}
-.contador {
-    text-align: center;
-}
+    }
+    .contador {
+        text-align: center;
+    }
 
 #timer {
     font-size: 60px;
-}
+    }
 
 .tempo {
     display: inline-block;
     margin: 0 20px;
-}
+    }
 
 .numero {
     color: white; /* Cor dos números */
     font-size: 120px; /* Tamanho da fonte para os números */
     margin: 0 20px; /* Espaçamento à esquerda e à direita dos números */
-}
-
+    }
 .palavra {
     color: green; /* Cor das palavras */
     font-size: 30px; /* Tamanho da fonte para as palavras */
-}
+    }
 .contador h2 {
     color: #6FFF57; /* Cor do título "Tempo Para Completar Objetivo" */
     margin-bottom: 20px; /* Adiciona espaço abaixo do h2 */
-}
+    }
 .contador h3 {
     margin-top: 50px; /* Adiciona espaço acima do h3 */
 }
